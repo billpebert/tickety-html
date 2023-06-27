@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .flex::before,
+    .flex::after {
+        display: none !important;
+    }
+
+    img{
+        @apply object-cover;
+    }
+
+    body{
+        @apply relative font-poppins text-white bg-dark-indigo;
+    }
+}
+
+@layer components{
+    .nav-link-item {
+        @apply text-base font-normal cursor-pointer hover:text-white hover:underline underline-offset-2 transition-all
+    }
+
+    /* .nav-link-item.active{
+        @apply font-semibold;
+    } */
+
+    .btn-primary {
+        @apply py-3 px-[22px] rounded-[50px] bg-primary text-white font-semibold text-sm md:text-base text-center inline-flex items-center
+    }
+
+    .btn-secondary {
+        @apply py-3 px-[22px] rounded-[50px] bg-secondary text-dark-indigo font-semibold text-sm md:text-base text-center inline-flex items-center
+    }
+}
+
+@layer utilities {
+    
+}
