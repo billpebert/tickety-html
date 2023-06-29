@@ -28,11 +28,11 @@
     } */
 
     .btn-primary {
-        @apply py-3 px-[22px] rounded-[50px] bg-primary text-white font-semibold text-sm md:text-base text-center inline-flex items-center
+        @apply py-3 px-[22px] rounded-[50px] bg-primary text-white font-semibold text-sm md:text-base text-center inline-flex justify-center items-center gap-3
     }
 
     .btn-secondary {
-        @apply py-3 px-[22px] rounded-[50px] bg-secondary text-dark-indigo font-semibold text-sm md:text-base text-center inline-flex items-center
+        @apply py-3 px-[22px] rounded-[50px] bg-secondary text-dark-indigo font-semibold text-sm md:text-base text-center inline-flex justify-center items-center gap-3
     }
 }
 
