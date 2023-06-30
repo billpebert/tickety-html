@@ -20,9 +20,11 @@ module.exports = {
         secondary: "#82D0DF",
         "butter-yellow": "#F7FF82",
         "lavender-pink": "#DF82CB",
+        "persian-pink": "#DF82CA",
         "iron-grey": "#DAD5E4",
         "pastel-purple": "#A99FBD",
         "bluish-purple": "#38255F",
+        "smoke-purple": "#A497BE"
       },
     },
   },

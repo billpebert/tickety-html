@@ -39,6 +39,18 @@
     .btn-secondary {
         @apply py-3 px-[22px] rounded-[50px] bg-secondary text-dark-indigo font-semibold text-sm md:text-base text-center inline-flex justify-center items-center gap-3
     }
+
+    .check-appearance {
+        @apply w-6 h-6 absolute right-5 border-2 border-solid border-[#9285AC] block rounded-full
+    }
+
+    .check-appearance::before {
+        @apply block absolute content-[''] rounded-full w-[14px] h-[14px] top-1/2 -translate-y-1/2 right-1/2 translate-x-1/2
+    }
+
+    input[type=radio]:checked ~ .check-appearance { /* the same with tailwind peer-checked: */
+        @apply border-persian-pink before:bg-persian-pink
+    }
 }
 
 @layer utilities {

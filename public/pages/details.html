@@ -89,7 +89,7 @@
             </div>
         </section>
 
-        <section class="overflow-x-visible">
+        <section class="overflow-x-visible relative">
             <div class="container max-w-screen-xl relative">
                 <div id="galleryCarousel">
                     <img src="/public/assets/images/gallery-1.webp" class="w-[433px] h-[310px] rounded-2xl mr-[30px]"
@@ -116,13 +116,13 @@
         </section>
 
         <section id="eventDescription" class="container max-w-screen-xl lg:pt-[70px] relative pb-[156px]">
-            <div class="flex items-start justify-between">
+            <div class="flex items-start justify-between gap-4">
                 <div>
                     <h5 class="text-[24px] md:text-[38px] font-bold">
                         What <span class="text-butter-yellow">This</span> <br>
                         <span class="text-butter-yellow">Event</span> About?
                     </h5>
-                    <p class="text-iron-grey text-lg leading-8 max-w-[633px] mt-4 mb-[30px]">
+                    <p class="text-iron-grey text-lg leading-8 max-w-[640px] mt-4 mb-[30px]">
                         Advance your skills as a beginning programmer with Python—one of
                         the most versatile and widely used programming languages! In this
                         course, you will build on your understanding of fundamental Python
@@ -198,17 +198,18 @@
                                     $12,000
                                 </p>
                             </div>
-                            <div class="inline-flex items-center">
+                            <div class="inline-flex items-center justify-between max-w-[150px]">
                                 <button type="button" class="minusButton">
                                     <img src="/public/assets/svgs/ic-minus.svg" alt="">
                                 </button>
-                                <input type="number" name="entry_ticket" id="entry_ticket" class="w-10 bg-transparent focus:outline-none text-center" value="0" min="1" max="100">
+                                <input type="number" name="entry_ticket" id="entry_ticket" class="bg-transparent focus:outline-none text-center" value="12" min="1" max="100">
                                 <button type="button" class="plusButton">
                                     <img src="/public/assets/svgs/ic-plus.svg" alt="">
                                 </button>
                             </div>
                         </div>
                     </div>
+                    <!-- Pro -->
                     <div class="py-6 px-5 bg-bluish-purple rounded-2xl">
                         <div class="flex items-center justify-between">
                             <div>
@@ -219,17 +220,18 @@
                                     $50,000
                                 </p>
                             </div>
-                            <div class="inline-flex items-center">
+                            <div class="inline-flex items-center justify-between max-w-[150px]">
                                 <button type="button" class="minusButton">
                                     <img src="/public/assets/svgs/ic-minus.svg" alt="">
                                 </button>
-                                <input type="number" name="pro_ticket" id="pro_ticket" class="w-10 bg-transparent focus:outline-none text-center" value="0" min="1" max="100">
+                                <input type="number" name="pro_ticket" id="pro_ticket" class="bg-transparent focus:outline-none text-center" value="44" min="1" max="100">
                                 <button type="button" class="plusButton">
                                     <img src="/public/assets/svgs/ic-plus.svg" alt="">
                                 </button>
                             </div>
                         </div>
                     </div>
+                    <!-- Enterprise -->
                     <div class="py-6 px-5 bg-bluish-purple rounded-2xl">
                         <div class="flex items-center justify-between">
                             <div>
@@ -240,11 +242,11 @@
                                     $250,000
                                 </p>
                             </div>
-                            <div class="inline-flex items-center">
-                                <button type="button" class="minusButton">
+                            <div class="inline-flex items-center justify-between max-w-[150px]">
+                                <button type="button" class="minusButton" data-target="test">
                                     <img src="/public/assets/svgs/ic-minus.svg" alt="">
                                 </button>
-                                <input type="number" name="enterprise_ticket" id="enterprise_ticket" class="w-10 bg-transparent focus:outline-none text-center" value="0" min="1" max="100">
+                                <input type="number" name="enterprise_ticket" id="enterprise_ticket" class="bg-transparent focus:outline-none text-center" value="664" min="1" max="100">
                                 <button type="button" class="plusButton">
                                     <img src="/public/assets/svgs/ic-plus.svg" alt="">
                                 </button>
@@ -259,9 +261,12 @@
                             $899,000
                         </p>
                     </div>
-                    <button type="submit" class="btn-secondary">
+                    <a href="/public/pages/checkout.html" class="btn-secondary">
                         Book Tickets Now
-                    </button>
+                    </a>
+                    <!-- <button type="submit" class="btn-secondary">
+                        Book Tickets Now
+                    </button> -->
                 </form>
             </div>
         </section>
@@ -280,7 +285,13 @@
 
         <!-- Carousel -->
         <script>
-            $('#galleryCarousel').flickity({
+            $carousel = $('#galleryCarousel')
+            let flickityPrevButton = $('#galleryCarousel .flickity-prev-next-button.previous')
+            let flickityNextButton = $('#galleryCarousel .flickity-prev-next-button.next')
+            let rightButton = $('#carouselRightButton')
+            let leftButton = $('#carouselLeftButton')
+
+            $carousel.flickity({
                 cellAlign: 'center',
                 contain: true,
                 pageDots: false,
@@ -295,10 +306,15 @@
                 overflow: 'visible'
             })
 
-            let flickityPrevButton = $('#galleryCarousel .flickity-prev-next-button.previous')
-            let flickityNextButton = $('#galleryCarousel .flickity-prev-next-button.next')
-            let rightButton = $('#carouselRightButton')
-            let leftButton = $('#carouselLeftButton')
+            $carousel.on('change.flickity', function (event, index) {
+                if (index > 0) {
+                    rightButton.removeClass('hidden')
+                    leftButton.addClass('hidden')
+                } else {
+                    rightButton.addClass('hidden')
+                    leftButton.removeClass('hidden')
+                }
+            });
 
             leftButton.on('click', (e) => {
                 flickityNextButton.trigger('click')
@@ -320,6 +336,25 @@
                 if (flickityNextButton[0].getAttribute('disabled') == null) {
                     leftButton.removeClass('hidden')
                 }
+            })
+        </script>
+
+        <!-- Input ticket increment -->
+        <script>
+            $(() => {
+                $('.minusButton').on('click', function () {
+                    let inputElement = $(this).siblings('input[type=number]')
+                    let currentValue = inputElement.val()
+                    if (currentValue != 0) {
+                        inputElement.val(--currentValue)
+                    }
+                })
+
+                $('.plusButton').on('click', function () {
+                    let inputElement = $(this).siblings('input[type=number]')
+                    let currentValue = inputElement.val()
+                    inputElement.val(++currentValue)
+                })
             })
         </script>
     </body>
