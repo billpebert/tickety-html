@@ -100,6 +100,10 @@
                         alt="">
                     <img src="/public/assets/images/gallery-1.webp" class="w-[433px] h-[310px] rounded-2xl mr-[30px]"
                         alt="">
+                    <img src="/public/assets/images/gallery-2.webp" class="w-[433px] h-[310px] rounded-2xl mr-[30px]"
+                        alt="">
+                    <img src="/public/assets/images/gallery-3.webp" class="w-[433px] h-[310px] rounded-2xl mr-[30px]"
+                        alt="">
                 </div>
                 <!-- Prev Button -->
                 <div class="absolute hidden -translate-y-1/2 top-1/2 lg:right-[200px] cursor-pointer" id="carouselRightButton">
@@ -296,7 +300,7 @@
                 contain: true,
                 pageDots: false,
                 imagesLoaded: true,
-                groupCells: true,
+                groupCells: false,
                 prevNextButtons: true
             })
 
@@ -307,35 +311,27 @@
             })
 
             $carousel.on('change.flickity', function (event, index) {
+                let len = $('#galleryCarousel .flickity-slider').children().length
+                console.log(len, index)
+                
+                if (index === len-1) {
+                    leftButton.addClass('hidden')
+                }
+
                 if (index > 0) {
                     rightButton.removeClass('hidden')
-                    leftButton.addClass('hidden')
-                } else {
+                }  else {
                     rightButton.addClass('hidden')
                     leftButton.removeClass('hidden')
                 }
             });
 
-            leftButton.on('click', (e) => {
-                flickityNextButton.trigger('click')
-                if (flickityPrevButton[0].getAttribute('disabled') == null) {
-                    rightButton.removeClass('hidden')
-                }
-
-                if (flickityNextButton[0].getAttribute('disabled') != null) {
-                    $('#' + e.currentTarget.id).addClass('hidden')
-                }
+            leftButton.on('click', function(e) {
+                $carousel.flickity('next')
             })
 
-            rightButton.on('click', (e) => {
-                flickityPrevButton.trigger('click')
-                if (flickityPrevButton[0].getAttribute('disabled') != null) {
-                    $('#' + e.currentTarget.id).addClass('hidden')
-                }
-
-                if (flickityNextButton[0].getAttribute('disabled') == null) {
-                    leftButton.removeClass('hidden')
-                }
+            rightButton.on('click', function(e) {
+                $carousel.flickity('previous')
             })
         </script>
 
