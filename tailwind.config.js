@@ -21,7 +21,8 @@ module.exports = {
         "butter-yellow": "#F7FF82",
         "lavender-pink": "#DF82CB",
         "iron-grey": "#DAD5E4",
-        "pastel-purple": "#A99FBD"
+        "pastel-purple": "#A99FBD",
+        "bluish-purple": "#38255F",
       },
     },
   },

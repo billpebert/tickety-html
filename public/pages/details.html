@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Design 101: Product Manager | Tickety</title>
+
+        <link rel="shortcut icon" href="/public/assets/svgs/logo-mark.svg" type="image/x-icon">
+        <link rel="stylesheet" href="/public/css/main.css">
+
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    </head>
+
+    <body class="overflow-x-hidden">
+        <nav class="container relative py-4 lg:py-10 max-w-screen-xl">
+            <div class="flex flex-col justify-between w-full lg:flex-row lg:items-center">
+                <!-- Logo & Toggler Button here -->
+                <div class="flex items-center justify-between">
+                    <!-- LOGO -->
+                    <a href="./index.html">
+                        <img src="../assets/svgs/logo-type.svg" alt="" />
+                    </a>
+                    <!-- RESPONSIVE NAVBAR BUTTON TOGGLER -->
+                    <div class="block lg:hidden">
+                        <button class="p-1 outline-none" id="navbarToggler" data-target="#navigation">
+                            <svg class="text-dark w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 8h16M4 16h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Nav Menu -->
+                <div class="hidden w-full lg:block" id="navigation">
+                    <div
+                        class="flex flex-col items-baseline gap-4 mt-6 lg:justify-between lg:flex-row lg:items-center lg:mt-0">
+                        <div
+                            class="flex flex-col w-full ml-auto lg:w-auto gap-4 lg:gap-[50px] lg:items-center lg:flex-row">
+                            <a href="#!" class="nav-link-item">Flash Sale</a>
+                            <a href="#!" class="nav-link-item">Newest</a>
+                            <a href="#!" class="nav-link-item">Categories</a>
+                            <a href="#!" class="nav-link-item">Stories</a>
+                        </div>
+                        <div class="flex flex-col w-full ml-auto lg:w-auto lg:gap-12 lg:items-center lg:flex-row">
+                            <a href="#!" class="btn-primary">
+                                Sign In
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="container max-w-screen-xl pt-4 lg:pt-10 overflow-hidden relative">
+            <div class="flex items-center flex-wrap mb-[38px] justify-between">
+                <!-- Page Header -->
+                <div class="flex flex-col gap-4 max-w-[430px]">
+                    <div class="inline-flex gap-[6px] items-center bg-butter-yellow rounded-full px-4 py-[6px] w-max">
+                        <img src="/public/assets/svgs/ic-champion-cup.svg" alt="">
+                        <p class="text-dark-indigo text-sm font-semibold">
+                            Popular Event
+                        </p>
+                    </div>
+
+                    <h1 class="text-5xl font-bold leading-normal">
+                        Design 101: Product Manager
+                    </h1>
+                    <p class="text-lg text-iron-grey">
+                        Learn how to facilitate design sprint today
+                    </p>
+                </div>
+
+                <!-- Rating Star -->
+                <div>
+                    <p class="text-lg font-semibold text-iron-grey text-end mb-2">
+                        18,309 people
+                    </p>
+                    <div class="flex items-center gap-[2px]">
+                        <img src="/public/assets/svgs/ic-star.svg" alt="">
+                        <img src="/public/assets/svgs/ic-star.svg" alt="">
+                        <img src="/public/assets/svgs/ic-star.svg" alt="">
+                        <img src="/public/assets/svgs/ic-star.svg" alt="">
+                        <img src="/public/assets/svgs/ic-star.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="overflow-x-visible">
+            <div class="container max-w-screen-xl relative">
+                <div id="galleryCarousel">
+                    <img src="/public/assets/images/gallery-1.webp" class="w-[433px] h-[310px] rounded-2xl mr-[30px]"
+                        alt="">
+                    <img src="/public/assets/images/gallery-2.webp" class="w-[433px] h-[310px] rounded-2xl mr-[30px]"
+                        alt="">
+                    <img src="/public/assets/images/gallery-3.webp" class="w-[433px] h-[310px] rounded-2xl mr-[30px]"
+                        alt="">
+                    <img src="/public/assets/images/gallery-1.webp" class="w-[433px] h-[310px] rounded-2xl mr-[30px]"
+                        alt="">
+                </div>
+                <!-- Prev Button -->
+                <div class="absolute hidden -translate-y-1/2 top-1/2 lg:right-[200px] cursor-pointer" id="carouselRightButton">
+                    <img src="/public/assets/svgs/ic-right-rounded.svg" alt="">
+                </div>
+                <!-- Next Button -->
+                <div class="absolute -translate-y-1/2 top-1/2 left-20 cursor-pointer" id="carouselLeftButton">
+                    <img src="/public/assets/svgs/ic-left-rounded.svg" alt="">
+                </div>
+            </div>
+            <!-- Wavy line ornament -->
+            <img src="/public/assets/svgs/wavy-line-3.svg"
+                class="w-full absolute -z-10 left-1/2 -translate-x-1/2 -top-20" alt="">
+        </section>
+
+        <section id="eventDescription" class="container max-w-screen-xl lg:pt-[70px] relative pb-[156px]">
+            <div class="flex items-start justify-between">
+                <div>
+                    <h5 class="text-[24px] md:text-[38px] font-bold">
+                        What <span class="text-butter-yellow">This</span> <br>
+                        <span class="text-butter-yellow">Event</span> About?
+                    </h5>
+                    <p class="text-iron-grey text-lg leading-8 max-w-[633px] mt-4 mb-[30px]">
+                        Advance your skills as a beginning programmer with Python—one of
+                        the most versatile and widely used programming languages! In this
+                        course, you will build on your understanding of fundamental Python
+                        and learn some more advanced skills, including how to work with files
+                        on your computer's disk, how to retrieve data using a web API, and how
+                        to use Object-Oriented Programming (OOP) to create your own.
+                    </p>
+        
+                    <div class="max-w-[500px]">
+                        <div class="grid grid-cols-2 gap-x-[50px] gap-y-[30px]">
+                            <div class="flex gap-4 items-center">
+                                <img src="/public/assets/svgs/ic-location.svg" alt="">
+                                <div>
+                                    <p class="text-pastel-purple text-sm mb-[2px]">
+                                        Location
+                                    </p>
+                                    <p class="text-base font-semibold">
+                                        Stadium Jaksel
+                                        Parabellum
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 items-center">
+                                <img src="/public/assets/svgs/ic-circles.svg" alt="">
+                                <div>
+                                    <p class="text-pastel-purple text-sm mb-[2px]">
+                                        Type
+                                    </p>
+                                    <p class="text-base font-semibold">
+                                        Online Event
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 items-center">
+                                <img src="/public/assets/svgs/ic-calendar.svg" alt="">
+                                <div>
+                                    <p class="text-pastel-purple text-sm mb-[2px]">
+                                        Date
+                                    </p>
+                                    <p class="text-base font-semibold">
+                                        12 June, 2023
+                                        18.00 PM
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 items-center">
+                                <img src="/public/assets/svgs/ic-watch.svg" alt="">
+                                <div>
+                                    <p class="text-pastel-purple text-sm mb-[2px]">
+                                        Duration
+                                    </p>
+                                    <p class="text-base font-semibold">
+                                        17hrs
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" method="" class="bg-primary p-5 rounded-2xl flex flex-col gap-5 max-w-[380px] w-full -mt-[120px] z-10 relative">
+                    <p class="text-xl font-semibold">
+                        Let's get your tickets
+                    </p>
+                    <!-- Entry -->
+                    <div class="py-6 px-5 bg-bluish-purple rounded-2xl">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="mb-1 text-base font-semibold">
+                                    Entry
+                                </p>
+                                <p class="text-[22px] font-semibold text-secondary">
+                                    $12,000
+                                </p>
+                            </div>
+                            <div class="inline-flex items-center">
+                                <button type="button" class="minusButton">
+                                    <img src="/public/assets/svgs/ic-minus.svg" alt="">
+                                </button>
+                                <input type="number" name="entry_ticket" id="entry_ticket" class="w-10 bg-transparent focus:outline-none text-center" value="0" min="1" max="100">
+                                <button type="button" class="plusButton">
+                                    <img src="/public/assets/svgs/ic-plus.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-6 px-5 bg-bluish-purple rounded-2xl">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="mb-1 text-base font-semibold">
+                                    Pro
+                                </p>
+                                <p class="text-[22px] font-semibold text-secondary">
+                                    $50,000
+                                </p>
+                            </div>
+                            <div class="inline-flex items-center">
+                                <button type="button" class="minusButton">
+                                    <img src="/public/assets/svgs/ic-minus.svg" alt="">
+                                </button>
+                                <input type="number" name="pro_ticket" id="pro_ticket" class="w-10 bg-transparent focus:outline-none text-center" value="0" min="1" max="100">
+                                <button type="button" class="plusButton">
+                                    <img src="/public/assets/svgs/ic-plus.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-6 px-5 bg-bluish-purple rounded-2xl">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="mb-1 text-base font-semibold">
+                                    Enterprise
+                                </p>
+                                <p class="text-[22px] font-semibold text-secondary">
+                                    $250,000
+                                </p>
+                            </div>
+                            <div class="inline-flex items-center">
+                                <button type="button" class="minusButton">
+                                    <img src="/public/assets/svgs/ic-minus.svg" alt="">
+                                </button>
+                                <input type="number" name="enterprise_ticket" id="enterprise_ticket" class="w-10 bg-transparent focus:outline-none text-center" value="0" min="1" max="100">
+                                <button type="button" class="plusButton">
+                                    <img src="/public/assets/svgs/ic-plus.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inline-flex items-center justify-between">
+                        <p class="text-base font-semibold">
+                            17 tickets
+                        </p>
+                        <p class="text-[22px] font-semibold text-secondary">
+                            $899,000
+                        </p>
+                    </div>
+                    <button type="submit" class="btn-secondary">
+                        Book Tickets Now
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+            integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script type="text/javascript">
+            $(() => {
+                $('#navbarToggler').on('click', function (e) {
+                    let navigationMenu = $(this).attr('data-target')
+                    $(navigationMenu).toggleClass('hidden')
+                })
+            })
+        </script>
+
+        <!-- Carousel -->
+        <script>
+            $('#galleryCarousel').flickity({
+                cellAlign: 'center',
+                contain: true,
+                pageDots: false,
+                imagesLoaded: true,
+                groupCells: true,
+                prevNextButtons: true
+            })
+
+            $('#galleryCarousel .flickity-prev-next-button').addClass('!opacity-0')
+
+            $('#galleryCarousel .flickity-viewport').css({
+                overflow: 'visible'
+            })
+
+            let flickityPrevButton = $('#galleryCarousel .flickity-prev-next-button.previous')
+            let flickityNextButton = $('#galleryCarousel .flickity-prev-next-button.next')
+            let rightButton = $('#carouselRightButton')
+            let leftButton = $('#carouselLeftButton')
+
+            leftButton.on('click', (e) => {
+                flickityNextButton.trigger('click')
+                if (flickityPrevButton[0].getAttribute('disabled') == null) {
+                    rightButton.removeClass('hidden')
+                }
+
+                if (flickityNextButton[0].getAttribute('disabled') != null) {
+                    $('#' + e.currentTarget.id).addClass('hidden')
+                }
+            })
+
+            rightButton.on('click', (e) => {
+                flickityPrevButton.trigger('click')
+                if (flickityPrevButton[0].getAttribute('disabled') != null) {
+                    $('#' + e.currentTarget.id).addClass('hidden')
+                }
+
+                if (flickityNextButton[0].getAttribute('disabled') == null) {
+                    leftButton.removeClass('hidden')
+                }
+            })
+        </script>
+    </body>
+
+</html>

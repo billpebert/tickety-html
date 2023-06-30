@@ -16,6 +16,11 @@
     body{
         @apply relative font-poppins text-white bg-dark-indigo;
     }
+
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+        @apply appearance-none
+    }
 }
 
 @layer components{

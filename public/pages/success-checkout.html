@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sucess Checkout | Tickety</title>
+
+        <link rel="shortcut icon" href="/public/assets/svgs/logo-mark.svg" type="image/x-icon">
+        <link rel="stylesheet" href="/public/css/main.css">
+    </head>
+
+    <body>
+        <nav class="container relative py-4 lg:py-10 max-w-screen-xl">
+            <div class="flex flex-col justify-between w-full lg:flex-row lg:items-center">
+                <!-- Logo & Toggler Button here -->
+                <div class="flex items-center justify-between">
+                    <!-- LOGO -->
+                    <a href="./index.html">
+                        <img src="../assets/svgs/logo-type.svg" alt="" />
+                    </a>
+                    <!-- RESPONSIVE NAVBAR BUTTON TOGGLER -->
+                    <div class="block lg:hidden">
+                        <button class="p-1 outline-none" id="navbarToggler" data-target="#navigation">
+                            <svg class="text-dark w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 8h16M4 16h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Nav Menu -->
+                <div class="hidden w-full lg:block" id="navigation">
+                    <div
+                        class="flex flex-col items-baseline gap-4 mt-6 lg:justify-between lg:flex-row lg:items-center lg:mt-0">
+                        <div
+                            class="flex flex-col w-full ml-auto lg:w-auto gap-4 lg:gap-[50px] lg:items-center lg:flex-row">
+                            <a href="#!" class="nav-link-item">Flash Sale</a>
+                            <a href="#!" class="nav-link-item">Newest</a>
+                            <a href="#!" class="nav-link-item">Categories</a>
+                            <a href="#!" class="nav-link-item">Stories</a>
+                        </div>
+                        <div class="flex flex-col w-full ml-auto lg:w-auto lg:gap-12 lg:items-center lg:flex-row">
+                            <a href="#!" class="btn-primary">
+                                Sign In
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="py-4 lg:pt-10 lg:pb-32 overflow-hidden relative h-screen">
+            <div class="container max-w-screen-xl flex flex-col items-center justify-center text-center relative">
+                <img src="/public/assets/svgs/ic-files.svg" alt="">
+                <h2 class="mt-[30px] text-[32px] font-bold">
+                    Success Checkout
+                </h2>
+                <p class="mt-4 mb-10 text-iron-grey text-lg leading-8">
+                    We will send ticket details through your <br>
+                    email, please sit tight and enjoy your time.
+                </p>
+                <a href="/index.html" class="btn-secondary px-[34px]">
+                    Book Other Ticket
+                </a>
+            </div>
+            <!-- Wavy line ornament -->
+            <svg class="absolute -z-10 left-[55%] -translate-x-1/2 top-[54%]" width="1798" height="458"
+                viewBox="0 0 1798 458" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M1797.06 432.197C1741.36 446.406 1600.85 500.88 1589.35 360.165C1579.75 242.745 1138.42 530.865 1201.96 251.33C1265.5 -28.2063 1470.39 196.792 1366.09 212.908C1261.8 229.024 1174.49 226.894 992.822 48.8456C811.155 -129.202 907.631 273.408 636.93 239.729C330.693 201.629 375.969 -82.7952 3.10449 305.451"
+                    stroke="#DF82CA" stroke-width="6" />
+            </svg>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+            integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $(() => {
+                $('#navbarToggler').on('click', function (e) {
+                    let navigationMenu = $(this).attr('data-target')
+                    $(navigationMenu).toggleClass('hidden')
+                })
+            })
+        </script>
+    </body>
+
+</html>
