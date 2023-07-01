@@ -13,13 +13,13 @@
     </head>
 
     <body class="overflow-x-hidden">
-        <nav class="container relative py-4 lg:py-10 max-w-screen-xl">
+        <nav class="container relative max-w-screen-xl py-4 lg:py-10">
             <div class="flex flex-col justify-between w-full lg:flex-row lg:items-center">
                 <!-- Logo & Toggler Button here -->
                 <div class="flex items-center justify-between">
                     <!-- LOGO -->
                     <a href="./index.html">
-                        <img src="../assets/svgs/logo-type.svg" alt="" />
+                        <img src="../assets/svgs/logo-type.svg" alt="tickety-assets" />
                     </a>
                     <!-- RESPONSIVE NAVBAR BUTTON TOGGLER -->
                     <div class="block lg:hidden">
@@ -55,7 +55,7 @@
         </nav>
 
         <section class="container max-w-screen-xl pt-4 lg:pt-10 pb-[100px] overflow-hidden relative">
-            <div class="px-[60px]">
+            <div class="xl:px-[60px]">
                 <!-- Breadcrumb -->
                 <ul class="inline-flex mb-5">
                     <li class="first:before:content-none before:content-['/'] before:mx-6">
@@ -75,9 +75,9 @@
                     </li>
                 </ul>
 
-                <div class="flex items-start justify-between">
+                <div class="flex flex-wrap items-center justify-center gap-y-[30px] lg:justify-between lg:items-start">
                     <div class="max-w-[500px]">
-                        <img src="/public/assets/images/gallery-1.webp" class="w-[280px] h-[200px] rounded-2xl" alt="">
+                        <img src="/public/assets/images/gallery-1.webp" class="w-[280px] h-[200px] rounded-2xl" alt="tickety-assets">
                         <h1 class="text-[32px] font-bold mt-5 mb-[30px]">
                             Design 101: Product Manager
                         </h1>
@@ -104,7 +104,7 @@
                                 Payment Details
                             </h6>
                             <!-- Entry ticket -->
-                            <div class="inline-flex justify-between gap-4 items-center">
+                            <div class="inline-flex items-center justify-between gap-4">
                                 <p class="text-base font-medium">
                                     22 entry ticket
                                 </p>
@@ -113,7 +113,7 @@
                                 </p>
                             </div>
                             <!-- Pro ticket -->
-                            <div class="inline-flex justify-between gap-4 items-center">
+                            <div class="inline-flex items-center justify-between gap-4">
                                 <p class="text-base font-medium">
                                     17 pro ticket
                                 </p>
@@ -122,7 +122,7 @@
                                 </p>
                             </div>
                             <!-- Enterprise ticket -->
-                            <div class="inline-flex justify-between gap-4 items-center">
+                            <div class="inline-flex items-center justify-between gap-4">
                                 <p class="text-base font-medium">
                                     2 enterprise ticket
                                 </p>
@@ -131,7 +131,7 @@
                                 </p>
                             </div>
                             <!-- Unique code -->
-                            <div class="inline-flex justify-between gap-4 items-center">
+                            <div class="inline-flex items-center justify-between gap-4">
                                 <p class="text-base font-medium">
                                     Unique code
                                 </p>
@@ -140,7 +140,7 @@
                                 </p>
                             </div>
                             <!-- Tax -->
-                            <div class="inline-flex justify-between gap-4 items-center">
+                            <div class="inline-flex items-center justify-between gap-4">
                                 <p class="text-base font-medium">
                                     Tax 22%
                                 </p>
@@ -149,7 +149,7 @@
                                 </p>
                             </div>
                             <!-- Grand total -->
-                            <div class="inline-flex justify-between gap-4 items-center">
+                            <div class="inline-flex items-center justify-between gap-4">
                                 <p class="text-base font-medium">
                                     Grand total
                                 </p>
@@ -167,21 +167,21 @@
                         </p>
                         <!-- Manual Transfer -->
                         <div
-                            class="py-6 px-5 bg-bluish-purple rounded-2xl relative cursor-pointer">
+                            class="relative px-5 py-6 cursor-pointer bg-bluish-purple rounded-2xl">
                             <div class="inline-flex items-center justify-between w-full">
-                                <label for="manualTransfer" class="text-base font-semibold cursor-pointer w-full block relative z-10">
+                                <label for="manualTransfer" class="relative z-10 block w-full text-base font-semibold cursor-pointer">
                                     Manual Transfer
                                 </label>
                                 <input type="radio" value="manual-transfer" id="manualTransfer" name="payment-method"
-                                    class="absolute inset-0 invisible peer/manual-transfer z-10" checked>
+                                    class="absolute inset-0 z-10 invisible peer/manual-transfer" checked>
                                 <div class="check-appearance"></div>
 
                             </div>
                             <!-- Bank Accounts -->
-                            <div class="flex-col gap-4 flex mt-4">
+                            <div class="flex flex-col gap-4 mt-4">
                                 <!-- Mandiri Account -->
-                                <div class="flex gap-5 items-center">
-                                    <img src="/public/assets/svgs/logo-mandiri.svg" alt="">
+                                <div class="flex items-center gap-5">
+                                    <img src="/public/assets/svgs/logo-mandiri.svg" alt="tickety-assets">
                                     <div>
                                         <p class="text-xs font-medium mb-[2px]">
                                             PT SHAYNA TICKET
@@ -192,8 +192,8 @@
                                     </div>
                                 </div>
                                 <!-- BCA Account -->
-                                <div class="flex gap-5 items-center">
-                                    <img src="/public/assets/svgs/logo-bca.svg" alt="">
+                                <div class="flex items-center gap-5">
+                                    <img src="/public/assets/svgs/logo-bca.svg" alt="tickety-assets">
                                     <div>
                                         <p class="text-xs font-medium mb-[2px]">
                                             PT SHAYNA TICKET
@@ -207,37 +207,37 @@
                         </div>
                         <!-- Virtual Account -->
                         <div
-                            class="py-6 px-5 bg-bluish-purple rounded-2xl relative cursor-pointer">
+                            class="relative px-5 py-6 cursor-pointer bg-bluish-purple rounded-2xl">
                             <div class="inline-flex items-center justify-between w-full">
-                                <label for="virtualAccount" class="text-base font-semibold cursor-pointer w-full block relative z-10">
+                                <label for="virtualAccount" class="relative z-10 block w-full text-base font-semibold cursor-pointer">
                                     Virtual Account
                                 </label>
                                 <input type="radio" value="virtual-account" id="virtualAccount" name="payment-method"
-                                    class="absolute inset-0 invisible peer/virtual-account z-10">
+                                    class="absolute inset-0 z-10 invisible peer/virtual-account">
                                 <div class="check-appearance"></div>
                             </div>
                         </div>
                         <!-- Credit Card -->
                         <div
-                            class="py-6 px-5 bg-bluish-purple rounded-2xl relative cursor-pointer">
+                            class="relative px-5 py-6 cursor-pointer bg-bluish-purple rounded-2xl">
                             <div class="inline-flex items-center justify-between w-full">
-                                <label for="creditCard" class="text-base font-semibold cursor-pointer w-full block relative z-10">
+                                <label for="creditCard" class="relative z-10 block w-full text-base font-semibold cursor-pointer">
                                     Credit Card
                                 </label>
                                 <input type="radio" value="credit-card" id="creditCard" name="payment-method"
-                                    class="absolute inset-0 invisible peer/credit-card z-10">
+                                    class="absolute inset-0 z-10 invisible peer/credit-card">
                                 <div class="check-appearance"></div>
                             </div>
                         </div>
                         <!-- MyWallet -->
                         <div
-                            class="py-6 px-5 bg-bluish-purple rounded-2xl relative cursor-pointer">
+                            class="relative px-5 py-6 cursor-pointer bg-bluish-purple rounded-2xl">
                             <div class="inline-flex items-center justify-between w-full">
-                                <label for="myWallet" class="text-base font-semibold cursor-pointer w-full block relative z-10">
+                                <label for="myWallet" class="relative z-10 block w-full text-base font-semibold cursor-pointer">
                                     MyWallet
                                 </label>
                                 <input type="radio" value="my-wallet" id="myWallet" name="payment-method"
-                                    class="absolute inset-0 invisible peer/my-wallet z-10">
+                                    class="absolute inset-0 z-10 invisible peer/my-wallet">
                                 <div class="check-appearance"></div>
                             </div>
                         </div>
@@ -246,11 +246,11 @@
                         <input type="text" name="name" id="completeName" placeholder="name" value="" class="text-black" hidden>
                         <input type="email" name="email" id="emailAddress" placeholder="email" value="" class="text-black" hidden>
                         <a href="/public/pages/success-checkout.html" class="btn-secondary">
-                            <img src="/public/assets/svgs/ic-secure-payment.svg" alt="">
+                            <img src="/public/assets/svgs/ic-secure-payment.svg" alt="tickety-assets">
                             Make Payment Now
                         </a>
                         <!-- <button type="submit" class="btn-secondary">
-                            <img src="/public/assets/svgs/ic-secure-payment.svg" alt="">
+                            <img src="/public/assets/svgs/ic-secure-payment.svg" alt="tickety-assets">
                             Make Payment Now
                         </button> -->
                     </form>

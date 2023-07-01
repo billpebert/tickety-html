@@ -11,13 +11,13 @@
     </head>
 
     <body>
-        <nav class="container relative py-4 lg:py-10 max-w-screen-xl">
+        <nav class="container relative max-w-screen-xl py-4 lg:py-10">
             <div class="flex flex-col justify-between w-full lg:flex-row lg:items-center">
                 <!-- Logo & Toggler Button here -->
                 <div class="flex items-center justify-between">
                     <!-- LOGO -->
                     <a href="./index.html">
-                        <img src="../assets/svgs/logo-type.svg" alt="" />
+                        <img src="../assets/svgs/logo-type.svg" alt="tickety-assets" />
                     </a>
                     <!-- RESPONSIVE NAVBAR BUTTON TOGGLER -->
                     <div class="block lg:hidden">
@@ -53,12 +53,12 @@
         </nav>
 
         <!-- Hero -->
-        <section id="heroSection" class="container max-w-screen-xl relative py-4 lg:pt-10 lg:pb-24">
-            <div class="flex items-center justify-between w-full flex-wrap gap-8">
+        <section id="heroSection" class="container relative max-w-screen-xl pt-10 pb-24">
+            <div class="flex flex-wrap items-center justify-between w-full gap-8">
                 <div class="w-full max-w-[400px] flex flex-col gap-4">
                     <div class="inline-flex gap-[6px] items-center bg-lavender-pink rounded-full px-4 py-[6px] w-max">
-                        <img src="/public/assets/svgs/ic-champion-cup.svg" alt="">
-                        <p class="text-dark-indigo text-sm font-semibold">
+                        <img src="/public/assets/svgs/ic-champion-cup.svg" alt="tickety-assets">
+                        <p class="text-sm font-semibold text-dark-indigo">
                             Buy one get three tickets
                         </p>
                     </div>
@@ -68,7 +68,7 @@
                             class="text-dark-indigo bg-butter-yellow inline-flex items-center h-[49px] w-max">Passions</span>
                         Today
                     </h1>
-                    <p class="text-base md:text-lg text-iron-grey leading-8">
+                    <p class="text-base leading-8 md:text-lg text-iron-grey">
                         You deserve new experiences that enhance
                         the things you are truly passionate about.
                     </p>
@@ -80,15 +80,15 @@
                 </div>
 
                 <img src="/public/assets/images/hero-image.webp" class="max-w-[584px] max-h-[400px] w-full h-full"
-                    alt="">
+                    alt="tickety-assets">
             </div>
         </section>
 
         <!-- Wavy line ornament -->
         <img src="/public/assets/svgs/wavy-line-1.svg" class="absolute -z-10 left-1/2 -translate-x-1/2 md:top-[200px]"
-            alt="">
+            alt="tickety-assets">
 
-        <section id="eventSection" class="container max-w-screen-xl relative py-10">
+        <section id="eventSection" class="container relative max-w-screen-xl py-10">
             <!-- Section Header -->
             <div class="flex justify-between items-center gap-4 mb-[50px]">
                 <h5 class="text-[24px] md:text-[38px] font-bold">
@@ -108,28 +108,28 @@
                     <!-- <p class="px-[14px] py-2 rounded-xl bg-butter-yellow text-dark-indigo font-semibold text-sm absolute top-5 right-5">
                         Popular
                     </p> -->
-                    <img src="/public/assets/images/event-1.webp" class="w-full h-auto md:h-[200px]" alt="">
-                    <div class="p-5 w-full bg-primary flex flex-col absolute h-full group-hover:-translate-y-[68%] transition ease-in-out duration-300">
-                        <div class="inline-flex justify-between items-center gap-4">
-                            <div>
-                                <div class="w-full">
-                                    <div class="truncate text-xl font-semibold">
-                                        Agus Sumardi
-                                    </div>
-                                    <p class="text-pastel-purple text-sm mt-[6px]">
-                                        Music • 26 Jun 2023
-                                    </p>
+                    <img src="/public/assets/images/event-1.webp" class="w-full h-full max-h-[205px]" alt="tickety-assets">
+                    <div
+                        class="p-5 w-full bg-primary flex flex-col absolute h-full group-hover:-translate-y-[70%] transition ease-in-out duration-300">
+                        <div class="flex flex-wrap items-center justify-between gap-y-4">
+                            <div class="max-w-[180px]">
+                                <div class="text-xl font-semibold truncate">
+                                    Agus Sumardi
                                 </div>
+                                <p class="text-pastel-purple text-sm mt-[6px]">
+                                    Music • 26 Jun 2023
+                                </p>
                             </div>
                             <p class="text-xl font-semibold text-secondary">
                                 $800
                             </p>
                         </div>
-                        <p class="text-base leading-7 text-iron-grey mt-4 opacity-0 group-hover:opacity-100  transition ease-in-out duration-300">
+                        <p
+                            class="mt-4 text-base leading-7 transition duration-300 ease-in-out opacity-0 text-iron-grey group-hover:opacity-100 line-clamp-3">
                             You deserve new experiences that enhance the things you are truly passionate about.
                         </p>
-                        <div class="mt-auto opacity-0 group-hover:opacity-100  transition ease-in-out duration-300">
-                            <a href="/public/pages/details.html" class="btn-secondary block">
+                        <div class="mt-auto transition duration-300 ease-in-out opacity-0 group-hover:opacity-100">
+                            <a href="/public/pages/details.html" class="block btn-secondary">
                                 View Details
                             </a>
                         </div>
@@ -138,31 +138,32 @@
                 <!-- Card -->
                 <div class="group rounded-2xl w-full overflow-hidden relative min-h-[297px] bg-primary">
                     <!-- Popular badge -->
-                    <p class="px-[14px] py-2 rounded-xl bg-butter-yellow text-dark-indigo font-semibold text-sm absolute top-5 right-5">
+                    <p
+                        class="px-[14px] py-2 rounded-xl bg-butter-yellow text-dark-indigo font-semibold text-sm absolute top-5 right-5">
                         Popular
                     </p>
-                    <img src="/public/assets/images/event-2.webp" class="w-full h-auto md:h-[200px]" alt="">
-                    <div class="p-5 w-full bg-primary flex flex-col absolute h-full group-hover:-translate-y-[68%] transition ease-in-out duration-300">
-                        <div class="inline-flex justify-between items-center gap-4">
-                            <div>
-                                <div class="w-full">
-                                    <div class="truncate text-xl font-semibold">
-                                        Design 101
-                                    </div>
-                                    <p class="text-pastel-purple text-sm mt-[6px]">
-                                        Workshop • 30 Jun 2023
-                                    </p>
+                    <img src="/public/assets/images/event-2.webp" class="w-full h-full max-h-[205px]" alt="tickety-assets">
+                    <div
+                        class="p-5 w-full bg-primary flex flex-col absolute h-full group-hover:-translate-y-[70%] transition ease-in-out duration-300">
+                        <div class="flex flex-wrap items-center justify-between gap-y-4">
+                            <div class="max-w-[180px]">
+                                <div class="text-xl font-semibold truncate">
+                                    Design 101
                                 </div>
+                                <p class="text-pastel-purple text-sm mt-[6px]">
+                                    Workshop • 30 Jun 2023
+                                </p>
                             </div>
                             <p class="text-xl font-semibold text-secondary">
                                 $59,000
                             </p>
                         </div>
-                        <p class="text-base leading-7 text-iron-grey mt-4 opacity-0 group-hover:opacity-100  transition ease-in-out duration-300">
+                        <p
+                            class="mt-4 text-base leading-7 transition duration-300 ease-in-out opacity-0 text-iron-grey group-hover:opacity-100 line-clamp-3">
                             You deserve new experiences that enhance the things you are truly passionate about.
                         </p>
-                        <div class="mt-auto opacity-0 group-hover:opacity-100  transition ease-in-out duration-300">
-                            <a href="/public/pages/details.html" class="btn-secondary block">
+                        <div class="mt-auto transition duration-300 ease-in-out opacity-0 group-hover:opacity-100">
+                            <a href="/public/pages/details.html" class="block btn-secondary">
                                 View Details
                             </a>
                         </div>
@@ -174,28 +175,28 @@
                     <!-- <p class="px-[14px] py-2 rounded-xl bg-butter-yellow text-dark-indigo font-semibold text-sm absolute top-5 right-5">
                         Popular
                     </p> -->
-                    <img src="/public/assets/images/event-3.webp" class="w-full h-auto md:h-[200px]" alt="">
-                    <div class="p-5 w-full bg-primary flex flex-col absolute h-full group-hover:-translate-y-[68%] transition ease-in-out duration-300">
-                        <div class="inline-flex justify-between items-center gap-4">
-                            <div>
-                                <div class="w-full">
-                                    <div class="truncate text-xl font-semibold">
-                                        Gamer Desk
-                                    </div>
-                                    <p class="text-pastel-purple text-sm mt-[6px]">
-                                        Business • 26 Jun 2023
-                                    </p>
+                    <img src="/public/assets/images/event-3.webp" class="w-full h-full max-h-[205px]" alt="tickety-assets">
+                    <div
+                        class="p-5 w-full bg-primary flex flex-col absolute h-full group-hover:-translate-y-[70%] transition ease-in-out duration-300">
+                        <div class="flex flex-wrap items-center justify-between gap-y-4">
+                            <div class="max-w-[180px]">
+                                <div class="text-xl font-semibold truncate">
+                                    Gamer Desk
                                 </div>
+                                <p class="text-pastel-purple text-sm mt-[6px]">
+                                    Business • 26 Jun 2023
+                                </p>
                             </div>
                             <p class="text-xl font-semibold text-secondary">
                                 $888,000
                             </p>
                         </div>
-                        <p class="text-base leading-7 text-iron-grey mt-4 opacity-0 group-hover:opacity-100  transition ease-in-out duration-300">
+                        <p
+                            class="mt-4 text-base leading-7 transition duration-300 ease-in-out opacity-0 text-iron-grey group-hover:opacity-100 line-clamp-3">
                             You deserve new experiences that enhance the things you are truly passionate about.
                         </p>
-                        <div class="mt-auto opacity-0 group-hover:opacity-100  transition ease-in-out duration-300">
-                            <a href="/public/pages/details.html" class="btn-secondary block">
+                        <div class="mt-auto transition duration-300 ease-in-out opacity-0 group-hover:opacity-100">
+                            <a href="/public/pages/details.html" class="block btn-secondary">
                                 View Details
                             </a>
                         </div>
@@ -207,28 +208,28 @@
                     <!-- <p class="px-[14px] py-2 rounded-xl bg-butter-yellow text-dark-indigo font-semibold text-sm absolute top-5 right-5">
                         Popular
                     </p> -->
-                    <img src="/public/assets/images/event-4.webp" class="w-full h-auto md:h-[200px]" alt="">
-                    <div class="p-5 w-full bg-primary flex flex-col absolute h-full group-hover:-translate-y-[68%] transition ease-in-out duration-300">
-                        <div class="inline-flex justify-between items-center gap-4">
-                            <div>
-                                <div class="w-full">
-                                    <div class="truncate text-xl font-semibold">
-                                        Cook for Family
-                                    </div>
-                                    <p class="text-pastel-purple text-sm mt-[6px]">
-                                        Food • 26 Jun 2023
-                                    </p>
+                    <img src="/public/assets/images/event-4.webp" class="w-full h-full max-h-[205px]" alt="tickety-assets">
+                    <div
+                        class="p-5 w-full bg-primary flex flex-col absolute h-full group-hover:-translate-y-[70%] transition ease-in-out duration-300">
+                        <div class="flex flex-wrap items-center justify-between gap-y-4">
+                            <div class="max-w-[180px]">
+                                <div class="text-xl font-semibold truncate">
+                                    Cook for Family
                                 </div>
+                                <p class="text-pastel-purple text-sm mt-[6px]">
+                                    Food • 26 Jun 2023
+                                </p>
                             </div>
                             <p class="text-xl font-semibold text-secondary">
                                 $22,309
                             </p>
                         </div>
-                        <p class="text-base leading-7 text-iron-grey mt-4 opacity-0 group-hover:opacity-100  transition ease-in-out duration-300">
+                        <p
+                            class="mt-4 text-base leading-7 transition duration-300 ease-in-out opacity-0 text-iron-grey group-hover:opacity-100 line-clamp-3">
                             You deserve new experiences that enhance the things you are truly passionate about.
                         </p>
-                        <div class="mt-auto opacity-0 group-hover:opacity-100  transition ease-in-out duration-300">
-                            <a href="/public/pages/details.html" class="btn-secondary block">
+                        <div class="mt-auto transition duration-300 ease-in-out opacity-0 group-hover:opacity-100">
+                            <a href="/public/pages/details.html" class="block btn-secondary">
                                 View Details
                             </a>
                         </div>
@@ -240,28 +241,28 @@
                     <!-- <p class="px-[14px] py-2 rounded-xl bg-butter-yellow text-dark-indigo font-semibold text-sm absolute top-5 right-5">
                         Popular
                     </p> -->
-                    <img src="/public/assets/images/event-5.webp" class="w-full h-auto md:h-[200px]" alt="">
-                    <div class="p-5 w-full bg-primary flex flex-col absolute h-full group-hover:-translate-y-[68%] transition ease-in-out duration-300">
-                        <div class="inline-flex justify-between items-center gap-4">
-                            <div>
-                                <div class="w-full">
-                                    <div class="truncate text-xl font-semibold">
-                                        Linki Park
-                                    </div>
-                                    <p class="text-pastel-purple text-sm mt-[6px]">
-                                        Business • 26 Jun 2023
-                                    </p>
+                    <img src="/public/assets/images/event-5.webp" class="w-full h-full max-h-[205px]" alt="tickety-assets">
+                    <div
+                        class="p-5 w-full bg-primary flex flex-col absolute h-full group-hover:-translate-y-[70%] transition ease-in-out duration-300">
+                        <div class="flex flex-wrap items-center justify-between gap-y-4">
+                            <div class="max-w-[180px]">
+                                <div class="text-xl font-semibold truncate">
+                                    Linki Park
                                 </div>
+                                <p class="text-pastel-purple text-sm mt-[6px]">
+                                    Business • 26 Jun 2023
+                                </p>
                             </div>
                             <p class="text-xl font-semibold text-secondary">
                                 $888,000
                             </p>
                         </div>
-                        <p class="text-base leading-7 text-iron-grey mt-4 opacity-0 group-hover:opacity-100  transition ease-in-out duration-300">
+                        <p
+                            class="mt-4 text-base leading-7 transition duration-300 ease-in-out opacity-0 text-iron-grey group-hover:opacity-100 line-clamp-3">
                             You deserve new experiences that enhance the things you are truly passionate about.
                         </p>
-                        <div class="mt-auto opacity-0 group-hover:opacity-100  transition ease-in-out duration-300">
-                            <a href="/public/pages/details.html" class="btn-secondary block">
+                        <div class="mt-auto transition duration-300 ease-in-out opacity-0 group-hover:opacity-100">
+                            <a href="/public/pages/details.html" class="block btn-secondary">
                                 View Details
                             </a>
                         </div>
@@ -270,31 +271,32 @@
                 <!-- Card -->
                 <div class="group rounded-2xl w-full overflow-hidden relative min-h-[297px] bg-primary">
                     <!-- Popular badge -->
-                    <p class="px-[14px] py-2 rounded-xl bg-butter-yellow text-dark-indigo font-semibold text-sm absolute top-5 right-5">
+                    <p
+                        class="px-[14px] py-2 rounded-xl bg-butter-yellow text-dark-indigo font-semibold text-sm absolute top-5 right-5">
                         Popular
                     </p>
-                    <img src="/public/assets/images/event-6.webp" class="w-full h-auto md:h-[200px]" alt="">
-                    <div class="p-5 w-full bg-primary flex flex-col absolute h-full group-hover:-translate-y-[68%] transition ease-in-out duration-300">
-                        <div class="inline-flex justify-between items-center gap-4">
-                            <div>
-                                <div class="w-full">
-                                    <div class="truncate text-xl font-semibold">
-                                        Soccer Board
-                                    </div>
-                                    <p class="text-pastel-purple text-sm mt-[6px]">
-                                        Workshop • 30 Jun 2023
-                                    </p>
+                    <img src="/public/assets/images/event-6.webp" class="w-full h-full max-h-[205px]" alt="tickety-assets">
+                    <div
+                        class="p-5 w-full bg-primary flex flex-col absolute h-full group-hover:-translate-y-[70%] transition ease-in-out duration-300">
+                        <div class="flex flex-wrap items-center justify-between gap-y-4">
+                            <div class="max-w-[180px]">
+                                <div class="text-xl font-semibold truncate">
+                                    Soccer Board
                                 </div>
+                                <p class="text-pastel-purple text-sm mt-[6px]">
+                                    Workshop • 30 Jun 2023
+                                </p>
                             </div>
                             <p class="text-xl font-semibold text-secondary">
                                 $59,000
                             </p>
                         </div>
-                        <p class="text-base leading-7 text-iron-grey mt-4 opacity-0 group-hover:opacity-100  transition ease-in-out duration-300">
+                        <p
+                            class="mt-4 text-base leading-7 transition duration-300 ease-in-out opacity-0 text-iron-grey group-hover:opacity-100 line-clamp-3">
                             You deserve new experiences that enhance the things you are truly passionate about.
                         </p>
-                        <div class="mt-auto opacity-0 group-hover:opacity-100  transition ease-in-out duration-300">
-                            <a href="/public/pages/details.html" class="btn-secondary block">
+                        <div class="mt-auto transition duration-300 ease-in-out opacity-0 group-hover:opacity-100">
+                            <a href="/public/pages/details.html" class="block btn-secondary">
                                 View Details
                             </a>
                         </div>
@@ -304,7 +306,7 @@
         </section>
 
         <section id="categoriesSection" class="relative pb-[100px] overflow-hidden">
-            <div class="container max-w-screen-xl relative py-10">
+            <div class="container relative max-w-screen-xl py-10">
                 <!-- Section Header -->
                 <div class="flex justify-between items-center gap-4 mb-[50px]">
                     <h5 class="text-[24px] md:text-[38px] font-bold">
@@ -322,10 +324,10 @@
                     <div
                         class="p-5 bg-primary rounded-2xl relative inline-flex gap-[14px] items-center w-full hover:ring-2 hover:ring-butter-yellow transition ease-in-out duration-300 group">
                         <a href="#!" class="after:absolute after:inset-0">
-                            <img src="/public/assets/svgs/ic-chart-growth.svg" alt="">
+                            <img src="/public/assets/svgs/ic-chart-growth.svg" alt="tickety-assets">
                         </a>
                         <div>
-                            <p class="capitalize text-xl font-semibold">
+                            <p class="text-xl font-semibold capitalize">
                                 Startup
                             </p>
                             <p class="mt-[6px] text-sm text-pastel-purple">
@@ -333,16 +335,17 @@
                             </p>
                         </div>
                         <img src="/public/assets/svgs/ic-arrow-right.svg"
-                            class="absolute bottom-1/2 translate-y-1/2 right-5 -translate-x-8 group-hover:translate-x-0 transition duration-300 ease-in-out opacity-0 group-hover:opacity-100"
-                            alt="">
+                            class="absolute transition duration-300 ease-in-out -translate-x-8 translate-y-1/2 opacity-0 bottom-1/2 right-5 group-hover:translate-x-0 group-hover:opacity-100"
+                            alt="tickety-assets">
                     </div>
                     <!-- Card -->
-                    <div class="p-5 bg-primary rounded-2xl relative inline-flex gap-[14px] items-center w-full hover:ring-2 hover:ring-butter-yellow transition ease-in-out duration-300 group">
+                    <div
+                        class="p-5 bg-primary rounded-2xl relative inline-flex gap-[14px] items-center w-full hover:ring-2 hover:ring-butter-yellow transition ease-in-out duration-300 group">
                         <a href="#!" class="after:absolute after:inset-0">
-                            <img src="/public/assets/svgs/ic-mic.svg" alt="">
+                            <img src="/public/assets/svgs/ic-mic.svg" alt="tickety-assets">
                         </a>
                         <div>
-                            <p class="capitalize text-xl font-semibold">
+                            <p class="text-xl font-semibold capitalize">
                                 music
                             </p>
                             <p class="mt-[6px] text-sm text-pastel-purple">
@@ -350,16 +353,17 @@
                             </p>
                         </div>
                         <img src="/public/assets/svgs/ic-arrow-right.svg"
-                            class="absolute bottom-1/2 translate-y-1/2 right-5 -translate-x-8 group-hover:translate-x-0 transition duration-300 ease-in-out opacity-0 group-hover:opacity-100"
-                            alt="">
+                            class="absolute transition duration-300 ease-in-out -translate-x-8 translate-y-1/2 opacity-0 bottom-1/2 right-5 group-hover:translate-x-0 group-hover:opacity-100"
+                            alt="tickety-assets">
                     </div>
                     <!-- Card -->
-                    <div class="p-5 bg-primary rounded-2xl relative inline-flex gap-[14px] items-center w-full hover:ring-2 hover:ring-butter-yellow transition ease-in-out duration-300 group">
+                    <div
+                        class="p-5 bg-primary rounded-2xl relative inline-flex gap-[14px] items-center w-full hover:ring-2 hover:ring-butter-yellow transition ease-in-out duration-300 group">
                         <a href="#!" class="after:absolute after:inset-0">
-                            <img src="/public/assets/svgs/ic-movie.svg" alt="">
+                            <img src="/public/assets/svgs/ic-movie.svg" alt="tickety-assets">
                         </a>
                         <div>
-                            <p class="capitalize text-xl font-semibold">
+                            <p class="text-xl font-semibold capitalize">
                                 movies
                             </p>
                             <p class="mt-[6px] text-sm text-pastel-purple">
@@ -367,16 +371,17 @@
                             </p>
                         </div>
                         <img src="/public/assets/svgs/ic-arrow-right.svg"
-                            class="absolute bottom-1/2 translate-y-1/2 right-5 -translate-x-8 group-hover:translate-x-0 transition duration-300 ease-in-out opacity-0 group-hover:opacity-100"
-                            alt="">
+                            class="absolute transition duration-300 ease-in-out -translate-x-8 translate-y-1/2 opacity-0 bottom-1/2 right-5 group-hover:translate-x-0 group-hover:opacity-100"
+                            alt="tickety-assets">
                     </div>
                     <!-- Card -->
-                    <div class="p-5 bg-primary rounded-2xl relative inline-flex gap-[14px] items-center w-full hover:ring-2 hover:ring-butter-yellow transition ease-in-out duration-300 group">
+                    <div
+                        class="p-5 bg-primary rounded-2xl relative inline-flex gap-[14px] items-center w-full hover:ring-2 hover:ring-butter-yellow transition ease-in-out duration-300 group">
                         <a href="#!" class="after:absolute after:inset-0">
-                            <img src="/public/assets/svgs/ic-console.svg" alt="">
+                            <img src="/public/assets/svgs/ic-console.svg" alt="tickety-assets">
                         </a>
                         <div>
-                            <p class="capitalize text-xl font-semibold">
+                            <p class="text-xl font-semibold capitalize">
                                 game
                             </p>
                             <p class="mt-[6px] text-sm text-pastel-purple">
@@ -384,15 +389,15 @@
                             </p>
                         </div>
                         <img src="/public/assets/svgs/ic-arrow-right.svg"
-                            class="absolute bottom-1/2 translate-y-1/2 right-5 -translate-x-8 group-hover:translate-x-0 transition duration-300 ease-in-out opacity-0 group-hover:opacity-100"
-                            alt="">
+                            class="absolute transition duration-300 ease-in-out -translate-x-8 translate-y-1/2 opacity-0 bottom-1/2 right-5 group-hover:translate-x-0 group-hover:opacity-100"
+                            alt="tickety-assets">
                     </div>
                 </div>
             </div>
 
             <!-- Wavy line ornament -->
             <img src="/public/assets/svgs/wavy-line-2.svg" class="absolute -z-10 left-1/2 -translate-x-1/2 top-[250px]"
-                alt="">
+                alt="tickety-assets">
         </section>
 
         <script src="https://code.jquery.com/jquery-3.6.3.min.js"
